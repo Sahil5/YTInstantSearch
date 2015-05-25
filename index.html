@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="js/instantSearch.js"></script>
+	</head>
+
+  <body>
+		<div id="searchHeader">
+			<span id="searchTitle">Search YouTube Instantly!</span>
+			<input type="text" id="searchBox"></input>	
+			<span class="searchTypeText">Instant Search is: </span>
+			<span class="searchTypeStatus"> ON </span>
+		</div>
+		<div id="playerContainer">
+			<div id="player"></div>
+			<span id="playingVideoTitle"></span>
+			<span id="madeByMessage">Made with &hearts; by Sahil Saini for </span>
+			<img src="images/tint_logo.png" />
+		</div>
+		<div id="playlistContainer">
+			<span id="nextTitle"> Up Next: </span>
+			<div id="video1" class="videoResult">
+				<img />
+				<span></span>
+			</div>
+			<div id="video2" class="videoResult">
+				<img />
+				<span></span>
+			</div>
+			<div id="video3" class="videoResult">
+				<img />
+				<span></span>
+			</div>
+			<div id="video4" class="videoResult">
+				<img />
+				<span></span>
+			</div>
+		</div>
+
+		<!-- Load Javascript client library for Data API -->
+		<script src="https://apis.google.com/js/client.js?onload=OnLoadCallback"></script>
+		
+		<!-- Load the IFrame Player API code asynchronously -->
+		<script>
+			var tag = document.createElement('script');
+
+			tag.src = "https://www.youtube.com/iframe_api";
+			var firstScriptTag = document.getElementsByTagName('script')[0];
+			firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+		</script>
+		
+  </body>
+</html>
+
