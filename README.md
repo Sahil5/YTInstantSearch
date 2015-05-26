@@ -4,6 +4,8 @@
 - instant search!
 - ability to toggle between regular and instant search
 - Tint-inspired color scheme :)
+- video that plays whenever page first loads is a video 
+  I actually made for a History course I took a while back
 
 ##Additional Questions:
 How could a search feature integrate with our existing product?
